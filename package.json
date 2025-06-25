@@ -1,0 +1,31 @@
+{
+  "name": "reliftest",
+  "version": "1.0.0",
+  "description": "Test for Relif application",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BibarelUsedFly/RelifTest.git"
+  },
+  "author": "BibarelUsedFly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BibarelUsedFly/RelifTest/issues"
+  },
+  "homepage": "https://github.com/BibarelUsedFly/RelifTest#readme",
+  "dependencies": {
+    "koa": "^3.0.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^13.0.1",
+    "pg": "^8.16.2",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "sequelize-cli": "^6.6.3"
+  }
+}
