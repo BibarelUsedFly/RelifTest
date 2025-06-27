@@ -42,7 +42,7 @@ module.exports = {
     // Mensajes para Hades
     await queryInterface.bulkInsert('Messages', [
       {
-        text: 'Hello?',
+        text: 'Hola?',
         role: 'client',
         sentAt: new Date('2024-03-15'),
         clientId: hades.id,
@@ -50,7 +50,7 @@ module.exports = {
         updatedAt: now,
       },
       {
-        text: 'Hellooo?',
+        text: 'Holaaa?',
         role: 'client',
         sentAt: new Date('2024-06-10'),
         clientId: hades.id,
