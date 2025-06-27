@@ -7,6 +7,11 @@ const { OpenAI } = require('openai');
 const chatbot = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const router = new KoaRouter();
 
+// Sanity check
+router.get('/', ctx => {
+  ctx.body = { message: '¡Hola! :)' };
+});
+
 // GET /clients
 router.get('/clients', async ctx => {
   const clients = await Client.findAll({

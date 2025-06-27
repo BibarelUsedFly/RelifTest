@@ -18,6 +18,7 @@ Este proyecto es un backend en Node.js que utiliza **Koa**, **Sequelize**, y **P
     Luego crea una base de datos en postgres
 
 3. **Crear un archivo .env**
+
     Crea un archivo .env con las siguientes variables de entorno.
     ```bash
     OPENAI_API_KEY=<tu-api-key-de-openai>
@@ -28,6 +29,7 @@ Este proyecto es un backend en Node.js que utiliza **Koa**, **Sequelize**, y **P
     DB_DIALECT=postgres
 
 4. **Crear tablas y datos de prueba**
+
     Puedes usar el CLI de Sequelize para correr las migraciones necesarias de la base de datos y crear unos cuantos datos de prueba.
     ```bash
     npx sequelize db:migrate

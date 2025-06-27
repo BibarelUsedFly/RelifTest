@@ -13,6 +13,7 @@ app.use(KoaJSON());
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.listen(3000, () => {
-  console.log('Ready at http://localhost:3000');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Ready on port ${PORT}`);
 });
