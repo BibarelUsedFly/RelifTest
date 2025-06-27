@@ -270,7 +270,7 @@ Políticas de comportamiento que debes seguir como asesora humana:
 El cliente se llama **${client.name}**.
 Tiene deudas morosas: **${isMorose ? 'sí' : 'no'}**.
 
-Redacta tu mensaje de forma cálida y profesional. Hazlo breve y directo. No entrege`
+Redacta tu mensaje de forma cálida y profesional. Hazlo breve y directo.`
     },
     /* Pasamos el historial de mensajes 
        si son "client", lo pasamos a la api como "user"
