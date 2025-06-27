@@ -14,25 +14,20 @@ Este proyecto es un backend en Node.js que utiliza **Koa**, **Sequelize**, y **P
 2. **Instalar dependencias**
     ```bash
     npm install
+    ```
+    Luego crea una base de datos en postgres
 
 3. **Crear un archivo .env**
+    Crea un archivo .env con las siguientes variables de entorno.
     ```bash
-    OPENAI_API_KEY=tu-api-key-de-openai
+    OPENAI_API_KEY=<tu-api-key-de-openai>
+    DB_USERNAME=<tu-usuario-de-postgres>
+    DB_PASSWORD=<contraseña-de-postgres>
+    DB_NAME=<nombre-de-la-base-de-datos>
+    DB_HOST=127.0.0.1
+    DB_DIALECT=postgres
 
-4. **Configurar la base de datos**
-    Crea una base de datos postgres y luego una carpeta config con el siguiente archivo config.js. Debes completar los datos faltantes. 
-    ```js
-    {
-        "development": {
-        "username": "<completar>",
-        "password": "<completar>",
-        "database": "<completar>",
-        "host": "127.0.0.1",
-        "dialect": "postgres"
-        }
-    }
-
-5. **Crear tablas y datos de prueba**
+4. **Crear tablas y datos de prueba**
     Puedes usar el CLI de Sequelize para correr las migraciones necesarias de la base de datos y crear unos cuantos datos de prueba.
     ```bash
     npx sequelize db:migrate
